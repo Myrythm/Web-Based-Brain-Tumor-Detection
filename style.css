@@ -1,0 +1,104 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #1e1e2f; /* Dark purple background */
+    color: #e0e0e0; /* Light text color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    background: #2c2c4a; /* Darker purple container background */
+    border-radius: 16px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5); /* Darker shadow */
+    padding: 30px;
+    max-width: 500px;
+    width: 100%;
+    animation: fadeIn 1s ease-in-out;
+}
+
+h1 {
+    color: #f5f5f5; /* Light text color */
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.upload-section {
+    margin-bottom: 30px;
+}
+
+input[type="file"] {
+    display: block;
+    margin: 0 auto;
+    padding: 12px;
+    border: 2px solid #7f5fc7; /* Lighter purple border */
+    border-radius: 8px;
+    background: #3a3a6a; /* Darker purple input background */
+    color: #e0e0e0; /* Light text color */
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+}
+
+input[type="file"]:hover {
+    border-color: #9b59b6; /* Lighter purple hover border color */
+}
+
+button {
+    padding: 12px 24px;
+    font-size: 18px;
+    color: #ffffff; /* Light text color */
+    background-color: #7f5fc7; /* Lighter purple button background */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 15px;
+}
+
+button:hover {
+    background-color: #9b59b6; /* Lighter purple hover background */
+    transform: scale(1.05);
+}
+
+button:active {
+    background-color: #6c4b9f; /* Darker purple active background */
+}
+
+.image-preview {
+    margin: 20px 0;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.image-preview img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Darker shadow */
+}
+
+.result-section {
+    margin-top: 30px;
+}
+
+.result-section p {
+    font-size: 20px;
+    font-weight: 500;
+    color: #f5f5f5; /* Light text color */
+    margin-top: 15px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
